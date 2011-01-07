@@ -3,6 +3,9 @@ div.appetizer {
   position: absolute;
   top: 0px;
   right: 50%;
+  padding: 2em;
+  color: #fff;
+  background-color: #600;
 }
 
 div.appetizer .success {
