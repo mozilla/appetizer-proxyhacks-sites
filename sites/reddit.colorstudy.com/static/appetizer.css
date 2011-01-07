@@ -10,4 +10,5 @@ div.appetizer {
 
 div.appetizer .success {
   background-color: #9f9;
+  z-index: 10;
 }
