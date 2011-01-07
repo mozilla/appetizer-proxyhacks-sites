@@ -49,6 +49,5 @@ manifest = {
       "description": "la voz del Internet - noticias antes de que ocurra"
     }
   },
-  "default_locale": "en",
-  "release": "2011-01-08T12:00:00Z"
+  "default_locale": "en"
 };
