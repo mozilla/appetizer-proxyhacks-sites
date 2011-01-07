@@ -1,6 +1,6 @@
 jQuery(function () {
 
-  console.log('hey');
+  console.log('hey', navigator.apps, navigator.apps.getInstalled);
 
   var body = $('body');
   if (! body.length) {
