@@ -9,7 +9,7 @@ jQuery(function () {
       // The app is not yet installed
       var div = $('<div class="appetizer"><a href="#" class="close">&#215;</a> <a href="#" class="install">Install this application!</a></div>');
       $('a.install', div).click(function () {
-        navigator.install({
+        navigator.apps.install({
           url: '/manifest.json',
           callback: function () {
             div.text('Installed!');
