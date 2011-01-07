@@ -1,13 +1,10 @@
 jQuery(function () {
 
-  console.log('hey', navigator.apps, navigator.apps.getInstalled);
-
   var body = $('body');
   if (! body.length) {
     body = $(document);
   }
   navigator.apps.getInstalled(function (v) {
-    console.log('getInstalled', v);
     if (! v.length) {
       // The app is not yet installed
       var div = $('<div class="appetizer"><a href="#" class="close">&#215;</a> <a href="#" class="install">Install this application!</a></div>');
