@@ -32,8 +32,6 @@ jQuery(function () {
 
 });
 
-alert('ok');
-
 manifest = {
   "manifest_version": "0.2",
   "name": "Reddit (proxyhack)",
