@@ -1,5 +1,7 @@
 jQuery(function () {
 
+  console.log('hey');
+
   var body = $('body');
   if (! body.length) {
     body = $(document);
@@ -29,6 +31,8 @@ jQuery(function () {
   });
 
 });
+
+alert('ok');
 
 manifest = {
   "manifest_version": "0.2",
