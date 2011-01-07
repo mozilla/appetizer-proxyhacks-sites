@@ -1,4 +1,4 @@
-$(function () {
+jQuery(function () {
 
   var body = $('body');
   if (! body.length) {
