@@ -10,7 +10,6 @@ jQuery(function () {
       var div = $('<div class="appetizer"><a href="#" class="close">&#215;</a> <a href="#" class="install">Install this application!</a></div>');
       $('a.install', div).click(function () {
         navigator.apps.install({
-          manifest: manifest,
           url: '/manifest.json',
           callback: function () {
             div.text('Installed!');
@@ -28,26 +27,3 @@ jQuery(function () {
   });
 
 });
-
-manifest = {
-  "manifest_version": "0.2",
-  "name": "Reddit (proxyhack)",
-  "description": "the voice of the internet -- news before it happens",
-  "base_url": "http://reddit.colorstudy.com",
-  "icons": {
-    "16": "favicon.ico"
-  },
-  "developer": {
-    "name": "Mozilla Labs, Ian Bicking",
-    "url": "http://apps.mozillalabs.com"
-  },
-  "installs_allowed_from": [
-    "https://appstore.mozillalabs.com"
-  ],
-  "locales": {
-    "es": {
-      "description": "la voz del Internet - noticias antes de que ocurra"
-    }
-  },
-  "default_locale": "en"
-};
