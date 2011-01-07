@@ -1,0 +1,24 @@
+{
+  "manifest_version": "0.2",
+  "name": "Reddit (proxyhack)",
+  "description": "the voice of the internet -- news before it happens",
+  "base_url": "http://reddit.colorstudy.com",
+  "icons": {
+    "16": "favicon.ico"
+  },
+  "developer": {
+    "name": "Mozilla Labs, Ian Bicking",
+    "url": "http://apps.mozillalabs.com",
+    "email": "ianb@mozilla.com"
+  },
+  "installs_allowed_from": [
+    "https://appstore.mozillalabs.com"
+  ],
+  "locales": {
+    "es": {
+      "description": "la voz del Internet - noticias antes de que ocurra"
+    }
+  },
+  "default_locale": "en",
+  "release": "2011-01-08T12:00:00Z"
+}

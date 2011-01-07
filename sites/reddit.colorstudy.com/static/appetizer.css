@@ -1,3 +1,10 @@
-* {
-  font-family: serif;
+div.appetizer {
+  border: 2px solid #000;
+  position: absolute;
+  top: 0px;
+  right: 50%;
+}
+
+div.appetizer .success {
+  background-color: #9f9;
 }
