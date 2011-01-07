@@ -17,9 +17,11 @@ jQuery(function () {
             div.addClass('success');
           }
         });
+        return false;
       });
       $('a.close', div).click(function () {
         div.remove();
+        return false;
       });
       body.prepend(div);
     }
