@@ -1,14 +1,16 @@
 div.appetizer {
-  border: 2px solid #000;
+  border: 5px solid #000;
   position: absolute;
   top: 0px;
   right: 50%;
   padding: 2em;
-  color: #fff;
-  background-color: #600;
+}
+
+div.appetizer .close {
+  float: right;
 }
 
 div.appetizer .success {
   background-color: #9f9;
-  z-index: 10;
+  z-index: 100;
 }
