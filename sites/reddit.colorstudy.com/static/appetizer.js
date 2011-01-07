@@ -1,6 +1,9 @@
 $(function () {
 
   var body = $('body');
+  if (! body.length) {
+    body = $(document);
+  }
   navigator.apps.getInstalled(function (v) {
     if (! v.length) {
       // The app is not yet installed
