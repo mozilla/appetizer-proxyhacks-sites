@@ -1,0 +1,17 @@
+{
+  "manifest_version": "0.2",
+  "name": "Wikipedia (proxyhack)",
+  "description": "The Free Encyclopedia",
+  "base_url": "http://wikipedia.colorstudy.com",
+  "icons": {
+    "16": "favicon.ico"
+  },
+  "developer": {
+    "name": "Mozilla Labs, Ian Bicking",
+    "url": "http://apps.mozillalabs.com"
+  },
+  "installs_allowed_from": [
+    "https://appstore.mozillalabs.com"
+  ],
+  "default_locale": "en"
+}
