@@ -1,4 +1,4 @@
-jQuery(function () {
+jQuery(function ($) {
 
   var body = $('body');
   if (! body.length) {
@@ -27,3 +27,5 @@ jQuery(function () {
   });
 
 });
+
+jQuery.noConflict();
