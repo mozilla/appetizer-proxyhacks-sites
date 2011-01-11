@@ -1,6 +1,5 @@
 <script>
-oj = window.jQuery; o$ = window.$;
-console.log('values of:', window.jQuery, window.$);
+  oj = window.jQuery; o$ = window.$;
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 <script src="/appetizer.js"></script>
@@ -14,11 +13,9 @@ var scriptEl = document.createElement('script');
 scriptEl.setAttribute('type', 'text/javascript');
 scriptEl.setAttribute('src', appBase + '/jsapi/include.js');
 document.head.appendChild(scriptEl);
-console.log('adding scriptEl', scriptEl);
 </script>
 <script type="text/javascript">
   navigator.apps.setRepoOrigin(appBase);
-console.log('setting origin', appBase);
-window.jQuery = oj; window.$ = o$;
+  window.jQuery = oj; window.$ = o$;
 </script>
 <link rel="stylesheet" type="text/css" href="/appetizer.css" />
