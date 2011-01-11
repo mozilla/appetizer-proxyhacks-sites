@@ -28,4 +28,4 @@ jQuery(function ($) {
 
 });
 
-jQuery.noConflict();
+jQuery.noConflict(true);
