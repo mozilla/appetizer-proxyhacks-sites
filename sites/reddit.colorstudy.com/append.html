@@ -1,22 +1,20 @@
-<script>
-  oj = window.jQuery; o$ = window.$;
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-<script src="http://stage.myapps.mozillalabs.com/js/jschannel.js"></script>
-<script src="/appetizer.js"></script>
 <script type="text/javascript">
-if (location.href.search(/testlocal/) != -1) {
-  var appBase = 'http://localhost'
+if (location.search.search(/testlocal/) != -1) {
+  var match = /testlocal=([^&#]*)/.exec(location.search);
+  if (match && match[1]) {
+    appBase = decodeURIComponent(match[1]);
+  } else {
+    appBase = 'http://localhost';
+  }
+  appBase = appBase.replace(/#.*$/, '');
 } else {
   appBase = 'https://stage.myapps.mozillalabs.com';
 }
 var scriptEl = document.createElement('script');
 scriptEl.setAttribute('type', 'text/javascript');
-scriptEl.setAttribute('src', appBase + '/jsapi/include.js');
+scriptEl.setAttribute('src', appBase + '/jsapi/include.js?repo_location=' +
+appBase);
 document.head.appendChild(scriptEl);
 </script>
-<script type="text/javascript">
-  navigator.apps.setRepoOrigin(appBase);
-  window.jQuery = oj; window.$ = o$;
-</script>
+<script src="/appetizer.js"></script>
 <link rel="stylesheet" type="text/css" href="/appetizer.css" />
