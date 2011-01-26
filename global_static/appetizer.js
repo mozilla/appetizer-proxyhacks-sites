@@ -18,6 +18,7 @@ var onReady = function () {
   }, 2000);
 
   console.log('Functions:', navigator.apps.getInstalled, navigator.apps.install);
+  console.log('HTML5:', navigator.apps.html5Implementation); 
   
   navigator.apps.getInstalled(function (v) {
     called = true;
