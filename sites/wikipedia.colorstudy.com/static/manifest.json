@@ -14,5 +14,6 @@
     "https://appstore.mozillalabs.com"
   ],
   "app_urls": ["http://wikipedia.colorstudy.com"],
+  "launch_path": "/",
   "default_locale": "en"
 }
