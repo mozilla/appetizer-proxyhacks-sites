@@ -43,6 +43,7 @@ var onReady = function () {
         console.log('calling navigator.apps.install()');
         if (! navigator.apps.html5Implementation) {
           // New API
+          console.log('Running new API; fetching manifest...');
           var req = new XMLHttpRequest();
           req.open('GET', '/manifest.json', true);
           req.onreadystatechange = function () {
@@ -50,6 +51,7 @@ var onReady = function () {
               return;
             }
             manifestObj = JSON.parse(req.responseText);
+            console.log('Got manifest:', manifestObj);
             navigator.apps.install({
               manifest: manifestObj,
               callback: success
