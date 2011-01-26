@@ -1,3 +1,7 @@
+if (typeof console == 'undefined') {
+  var console = {log: function () {}};
+}
+
 var onReady = function () {
   if (! navigator.apps) {
     // Hasn't loaded for some reason :P
@@ -6,7 +10,16 @@ var onReady = function () {
   }
 
   var body = document.getElementsByTagName('body')[0];
+  var called = false;
+  setTimeout(function () {
+    if (! called) {
+      console.log('getInstallated timed out');
+    }
+  }, 2000);
+  
   navigator.apps.getInstalled(function (v) {
+    called = true;
+    console.log('Result from getInstalled:', v);
     if (! v.length) {
       // The app is not yet installed
       var div = document.createElement('div');
@@ -20,6 +33,7 @@ var onReady = function () {
         return false;
       }, false);
       install.addEventListener('click', function () {
+        console.log('calling navigator.apps.install()');
         navigator.apps.install({
           url: location.protocol + '//' + location.host + "/manifest.json",
           callback: function () {
