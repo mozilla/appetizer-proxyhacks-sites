@@ -43,7 +43,8 @@ var onReady = function () {
         console.log('calling navigator.apps.install()');
         if (! navigator.apps.html5Implementation) {
           // New API
-          var req = new XMLHttpRequest('GET', '/manifest.json', true);
+          var req = new XMLHttpRequest();
+          req.open('GET', '/manifest.json', true);
           req.onreadystatechange = function () {
             if (req.readyState != 4) {
               return;
