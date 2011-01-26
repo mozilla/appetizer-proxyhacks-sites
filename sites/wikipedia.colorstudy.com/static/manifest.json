@@ -13,5 +13,6 @@
   "installs_allowed_from": [
     "https://appstore.mozillalabs.com"
   ],
+  "app_urls": [],
   "default_locale": "en"
 }
