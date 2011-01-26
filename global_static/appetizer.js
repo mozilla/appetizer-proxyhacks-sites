@@ -21,7 +21,7 @@ var onReady = function () {
       }, false);
       install.addEventListener('click', function () {
         navigator.apps.install({
-          url: location.protocol + '//' + location.host + '"/manifest.json",
+          url: location.protocol + '//' + location.host + "/manifest.json",
           callback: function () {
             install.innerHTML = "Installed!";
             div.className += ' success';
