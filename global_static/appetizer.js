@@ -35,7 +35,8 @@ var onReady = function () {
         div.style.display = 'none';
         return false;
       }, false);
-      function success() {
+      function success(result) {
+        console.log('Callback after install:', result);
         install.innerHTML = "Installed!";
         div.className += ' success';
       }      
