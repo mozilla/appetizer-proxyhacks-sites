@@ -16,6 +16,8 @@ var onReady = function () {
       console.log('getInstallated timed out');
     }
   }, 2000);
+
+  console.log('Functions:', navigator.apps.getInstalled, navigator.apps.install);
   
   navigator.apps.getInstalled(function (v) {
     called = true;
