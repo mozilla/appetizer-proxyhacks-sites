@@ -13,6 +13,6 @@
   "installs_allowed_from": [
     "https://appstore.mozillalabs.com"
   ],
-  "app_urls": [],
+  "app_urls": ["http://wikipedia.colorstudy.com"],
   "default_locale": "en"
 }
