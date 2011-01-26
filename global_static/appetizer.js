@@ -35,15 +35,31 @@ var onReady = function () {
         div.style.display = 'none';
         return false;
       }, false);
+      function success() {
+        install.innerHTML = "Installed!";
+        div.className += ' success';
+      }      
       install.addEventListener('click', function () {
         console.log('calling navigator.apps.install()');
-        navigator.apps.install({
-          url: location.protocol + '//' + location.host + "/manifest.json",
-          callback: function () {
-            install.innerHTML = "Installed!";
-            div.className += ' success';
-          }
-        });
+        if (! navigator.apps.html5Implementation) {
+          // New API
+          var req = new XMLHttpRequest('/manifest.json');
+          req.onreadystatechange = function () {
+            if (req.readyState == 4) {
+              manifestObj = JSON.parse(req.responseText);
+            }
+            navigator.apps.install({
+              manifest: manifestObj,
+              callback: success
+            });
+          };
+          req.send();
+        } else {
+          navigator.apps.install({
+            url: location.protocol + '//' + location.host + "/manifest.json",
+            callback: success
+          });
+        }
         return false;
       }, false);
       body.insertBefore(div, body.childNodes[0]);
