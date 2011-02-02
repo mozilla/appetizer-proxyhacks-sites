@@ -65,8 +65,8 @@ function runInstall() {
   }
 }
 
-function success(result) {
-  console.log("installed result:", result);
+function success(result, extra) {
+  console.log("installed result:", result, extra);
   if (result === true) {
     showInstalled();
     return;
