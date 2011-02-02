@@ -10,8 +10,8 @@ function checkInstall() {
     if (! loadedHTML5) {
       var script = document.createElement('script');
       script.setAttribute('type', 'text/javascript');
-      script.setAttribute('src', 'https://stage.myapps.mozillalabs.com');
-      document.head.appendChild(script);
+      script.setAttribute('src', 'https://stage.myapps.mozillalabs.com/jsapi/include.js');
+      document.getElementsByTagName('head')[0].appendChild(script);
       loadedHTML5 = true;
       console.log('Loading HTML5 API from:',
                   script.getAttribute('src'));
