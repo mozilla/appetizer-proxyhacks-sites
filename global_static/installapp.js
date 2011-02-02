@@ -82,6 +82,5 @@ console.log('readyState', document.readyState);
 if (document.readyState === 'complete') {
   setTimeout(checkInstall, 10);
 } else {
-  document.addEventListener("load", checkInstall, false);
+  window.addEventListener("load", checkInstall, false);
 }
-checkInstall();
