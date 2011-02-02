@@ -78,6 +78,7 @@ function success(result) {
   }
 }
 
+console.log('readyState', document.readyState);
 if (document.readyState === 'complete') {
   setTimeout(checkInstall, 10);
 } else {
