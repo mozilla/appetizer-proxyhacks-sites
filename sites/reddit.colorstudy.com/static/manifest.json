@@ -6,6 +6,7 @@
   "icons": {
     "16": "favicon.ico"
   },
+  "app_urls": [],
   "developer": {
     "name": "Mozilla Labs, Ian Bicking",
     "url": "http://apps.mozillalabs.com"
