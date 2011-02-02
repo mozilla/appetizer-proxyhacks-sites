@@ -1,0 +1,19 @@
+{
+  "manifest_version": "0.2",
+  "name": "The Huffington Post",
+  "description": "Breaking News and Opinion",
+  "base_url": "http://huffpost.colorstudy.com",
+  "icons": {
+    "16": "favicon.ico"
+  },
+  "app_urls": ["http://huffpost.colorstudy.com"],
+  "launch_path": "/",
+  "developer": {
+    "name": "Mozilla Labs, Ian Bicking",
+    "url": "http://apps.mozillalabs.com"
+  },
+  "installs_allowed_from": [
+    "https://appstore.mozillalabs.com"
+  ],
+  "default_locale": "en"
+}

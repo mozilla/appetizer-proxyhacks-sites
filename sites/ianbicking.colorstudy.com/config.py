@@ -1,0 +1,1 @@
+host = 'blog.ianbicking.org'

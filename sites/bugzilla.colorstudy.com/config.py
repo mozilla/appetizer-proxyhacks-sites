@@ -1,0 +1,1 @@
+host = 'bugzilla.mozilla.org'

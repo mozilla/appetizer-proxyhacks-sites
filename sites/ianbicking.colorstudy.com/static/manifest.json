@@ -1,0 +1,19 @@
+{
+  "manifest_version": "0.2",
+  "name": "Ian Bicking: a blog",
+  "description": "WordPress blog at blog.ianbicking.org",
+  "base_url": "http://ianbicking.colorstudy.com",
+  "icons": {
+    "16": "favicon.ico"
+  },
+  "app_urls": ["http://ianbicking.colorstudy.com"],
+  "launch_path": "/",
+  "developer": {
+    "name": "Mozilla Labs, Ian Bicking",
+    "url": "http://apps.mozillalabs.com"
+  },
+  "installs_allowed_from": [
+    "https://appstore.mozillalabs.com"
+  ],
+  "default_locale": "en"
+}
