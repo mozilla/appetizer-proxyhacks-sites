@@ -6,7 +6,7 @@
   "icons": {
     "16": "favicon.ico"
   },
-  "app_urls": [],
+  "app_urls": ["http://reddit.colorstudy.com"],
   "developer": {
     "name": "Mozilla Labs, Ian Bicking",
     "url": "http://apps.mozillalabs.com"
