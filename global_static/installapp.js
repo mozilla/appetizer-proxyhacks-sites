@@ -73,8 +73,8 @@ function success(result) {
   }
 }
 
-if (document.readyState == 'complete') {
-  checkInstall();
+if (document.readyState === 'complete') {
+  setTimeout(checkInstall, 10);
 } else {
   document.addEventListener("load", checkInstall, false);
 }
