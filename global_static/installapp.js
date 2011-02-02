@@ -21,6 +21,7 @@ function checkInstall() {
     setTimeout(checkInstall, 200);
     return;
   }
+  console.log('navigator.apps available:', navigator.apps);
   navigator.apps.getInstalled(function (v) {
     if (v && v.length) {
       console.log('Application already installed:', v);
@@ -39,11 +40,13 @@ function showInstalled() {
 function runInstall() {
   var url = '/manifest.json';
   if (navigator.apps.html5Implementation) {
+    console.log('Installing via html5 implementation');
     navigator.apps.install({
       url: location.protocol + '//' + location.host + url,
       callback: success
     });
   } else {
+    console.log('fetching manifest to install from:', url);
     var req = new XMLHttpRequest();
     req.open('GET', url, true);
     req.onreadystatechange = function () {
@@ -52,6 +55,7 @@ function runInstall() {
       }
       // FIXME: handle errors...
       var manifestObj = JSON.parse(req.responseText);
+      console.log('Manifest loaded:', manifestObj);
       navigator.apps.install({
         manifest: manifestObj,
         callback: success
