@@ -61,6 +61,7 @@ function runInstall() {
         callback: success
       });
     };
+    req.send();
   }
 }
 
@@ -82,3 +83,4 @@ if (document.readyState === 'complete') {
 } else {
   document.addEventListener("load", checkInstall, false);
 }
+checkInstall();
