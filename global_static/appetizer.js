@@ -18,8 +18,8 @@ var onReady = function () {
   }, 2000);
 
   console.log('Functions:', navigator.apps.getInstalled, navigator.apps.install);
-  console.log('HTML5:', navigator.apps.html5Implementation); 
-  
+  console.log('HTML5:', navigator.apps.html5Implementation);
+
   navigator.apps.getInstalled(function (v) {
     called = true;
     console.log('Result from getInstalled:', v);
@@ -39,7 +39,7 @@ var onReady = function () {
         console.log('Callback after install:', result);
         install.innerHTML = "Installed!";
         div.className += ' success';
-      }      
+      }
       install.addEventListener('click', function () {
         console.log('calling navigator.apps.install()');
         if (! navigator.apps.html5Implementation) {

@@ -5,6 +5,7 @@ if (typeof console == 'undefined') {
 var loadedHTML5 = false;
 
 function checkInstall() {
+  console.log('Checking install');
   if (! navigator.apps) {
     if (! loadedHTML5) {
       var script = document.createElement('script');
