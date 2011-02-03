@@ -1,0 +1,19 @@
+{
+  "manifest_version": "0.2",
+  "name": "Twitter",
+  "description": "The best way to discover what’s new in your world. ",
+  "base_url": "http://twitter.colorstudy.com",
+  "icons": {
+    "16": "favicon.ico"
+  },
+  "app_urls": ["http://twitter.colorstudy.com"],
+  "launch_path": "/",
+  "developer": {
+    "name": "Mozilla Labs, Ian Bicking",
+    "url": "http://apps.mozillalabs.com"
+  },
+  "installs_allowed_from": [
+    "https://appstore.mozillalabs.com"
+  ],
+  "default_locale": "en"
+}
