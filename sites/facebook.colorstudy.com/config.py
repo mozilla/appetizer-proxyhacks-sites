@@ -1,2 +1,2 @@
-host = 'facebook.com'
-host_alises = ['www.facebook.com']
+host = 'www.facebook.com'
+host_alises = ['facebook.com']
